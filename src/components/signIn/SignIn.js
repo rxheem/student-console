@@ -4,6 +4,8 @@ import React, { Component } from 'react';
 import Form from 'react-bootstrap/Form';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import Container from 'react-bootstrap/Container';
+import Link from 'react-router-dom/Link';
 
 class SignIn extends Component {
   constructor(props) {
@@ -12,7 +14,8 @@ class SignIn extends Component {
     // Sets the state
     this.state = {
       email: '',
-      password: ''
+      password: '',
+      keepSignedIn: false
     };
   }
 
@@ -26,7 +29,7 @@ class SignIn extends Component {
   render() {
     if (this.props.isMinified) {
       return (
-        <div id='SignIn'>
+        <Container fluid={true} id='SignIn'>
           <Form>
             <Form.Row>
               {/* Email or username */}
@@ -53,8 +56,11 @@ class SignIn extends Component {
                 />
               </Form.Group>
             </Form.Row>
+            <div style={{ textAlign: 'right' }} className='container'>
+              <Link>Forgot password</Link>
+            </div>
           </Form>
-        </div>
+        </Container>
       );
     } else {
       return <Form>This is the normal sign in </Form>;
