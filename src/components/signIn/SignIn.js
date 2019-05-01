@@ -63,7 +63,11 @@ class SignIn extends Component {
         </Container>
       );
     } else {
-      return <Form>This is the normal sign in </Form>;
+      return (
+        <Container>
+          <Form>This is the normal sign in </Form>
+        </Container>
+      );
     }
   }
 }
