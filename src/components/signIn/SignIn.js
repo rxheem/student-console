@@ -8,6 +8,9 @@ import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import Link from 'react-router-dom/Link';
 
+// Importing Style
+import './SignIn.css';
+
 class SignIn extends Component {
   constructor(props) {
     super(props);
@@ -30,7 +33,7 @@ class SignIn extends Component {
   render() {
     if (this.props.isMinified) {
       return (
-        <div fluid={true} id='SignIn'>
+        <div fluid={true} id='SignIn' style={{ paddingTop: '15px' }}>
           <Form className='ml-auto'>
             <Form.Row>
               {/* Email or username */}
@@ -40,7 +43,10 @@ class SignIn extends Component {
                 style={{ display: 'flex' }}
               >
                 <Form.Label
-                  style={{ paddingRight: '10px', paddingTop: ' 6px' }}
+                  style={{
+                    paddingRight: '10px',
+                    paddingTop: ' 6px'
+                  }}
                 >
                   Email
                 </Form.Label>

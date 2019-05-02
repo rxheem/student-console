@@ -11,25 +11,31 @@ class HomeNavigation extends Component {
 
   render() {
     return (
-      <Navbar id='Home-Navigation' bg='light' expand='lg'>
-        <Navbar.Brand href='#home'>School Console</Navbar.Brand>
+      <Navbar id='Home-Navigation' bg='light' variant='light' expand='lg'>
+        <Navbar.Brand href='/'>School Console</Navbar.Brand>
         <Navbar.Toggle aria-controls='home-navbar-nav' />
 
-        <Nav className='ml-auto'>
-          <Nav.Link href='#home'>Home</Nav.Link>
-          <Nav.Link href='#link'>Link</Nav.Link>
-          <NavDropdown title='Dropdown' id='basic-nav-dropdown'>
-            <NavDropdown.Item href='#action/3.1'>Action</NavDropdown.Item>
-            <NavDropdown.Item href='#action/3.2'>
-              Another action
-            </NavDropdown.Item>
-            <NavDropdown.Item href='#action/3.3'>Something</NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item href='#action/3.4'>
-              Separated link
-            </NavDropdown.Item>
-          </NavDropdown>
-        </Nav>
+        <Navbar.Collapse id='navbar-nav'>
+          <Nav className='mr-auto'>
+            <Nav.Link href='#home'>Why Console</Nav.Link>
+            <Nav.Link href='#link'>Features</Nav.Link>
+            <NavDropdown title='Your Role' id='basic-nav-dropdown'>
+              <NavDropdown.Item href='#action/3.2'>Principal</NavDropdown.Item>
+              <NavDropdown.Item href='#action/3.1'>
+                Administration
+              </NavDropdown.Item>
+              <NavDropdown.Item href='#action/3.2'>Amissions</NavDropdown.Item>
+              <NavDropdown.Item href='#action/3.3'>Teacher</NavDropdown.Item>
+              <NavDropdown.Item href='#action/3.3'>Inventory</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href='#action/3.4'>
+                Other Staff
+              </NavDropdown.Item>
+            </NavDropdown>
+            <Nav.Link href='#home'>Resources</Nav.Link>
+            <Nav.Link href='#link'>Contact Us</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
 
         {/* Minified sign in */}
         <SignIn isMinified={true} />
