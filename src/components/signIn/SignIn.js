@@ -5,6 +5,7 @@ import Form from 'react-bootstrap/Form';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
+import Button from 'react-bootstrap/Button';
 import Link from 'react-router-dom/Link';
 
 class SignIn extends Component {
@@ -59,6 +60,8 @@ class SignIn extends Component {
             <div style={{ textAlign: 'right' }} className='container'>
               <Link>Forgot password</Link>
             </div>
+
+            <Button primary>Sign In</Button>
           </Form>
         </Container>
       );
