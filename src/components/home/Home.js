@@ -13,8 +13,7 @@ export default class Home extends Component {
   render() {
     return (
       <div>
-        <p>This is home</p>
-        <SignIn isMinified={true} />
+        <span />
       </div>
     );
   }

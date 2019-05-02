@@ -30,12 +30,20 @@ class SignIn extends Component {
   render() {
     if (this.props.isMinified) {
       return (
-        <Container fluid={true} id='SignIn'>
-          <Form>
+        <div fluid={true} id='SignIn'>
+          <Form className='ml-auto'>
             <Form.Row>
               {/* Email or username */}
-              <Form.Group as={Col} controlId='email'>
-                <Form.Label>Email</Form.Label>
+              <Form.Group
+                as={Col}
+                controlId='email'
+                style={{ display: 'flex' }}
+              >
+                <Form.Label
+                  style={{ paddingRight: '10px', paddingTop: ' 6px' }}
+                >
+                  Email
+                </Form.Label>
                 <Form.Control
                   name='email'
                   type='email'
@@ -46,8 +54,16 @@ class SignIn extends Component {
               </Form.Group>
 
               {/* Password */}
-              <Form.Group as={Col} controlId='password'>
-                <Form.Label>Password</Form.Label>
+              <Form.Group
+                as={Col}
+                controlId='password'
+                style={{ display: 'flex', paddingRight: '2rem' }}
+              >
+                <Form.Label
+                  style={{ paddingRight: '10px', paddingTop: ' 6px' }}
+                >
+                  Password
+                </Form.Label>
                 <Form.Control
                   name='password'
                   type='password'
@@ -57,13 +73,8 @@ class SignIn extends Component {
                 />
               </Form.Group>
             </Form.Row>
-            <div style={{ textAlign: 'right' }} className='container'>
-              <Link>Forgot password</Link>
-            </div>
-
-            <Button primary>Sign In</Button>
           </Form>
-        </Container>
+        </div>
       );
     } else {
       return (

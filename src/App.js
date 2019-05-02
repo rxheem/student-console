@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import PropTypes from 'prop-types';
 import Home from './components/home/Home';
+import HomeNavigation from './components/homeNavigation/HomeNavigation';
 
 class App extends Component {
   constructor(props) {
@@ -15,8 +16,7 @@ class App extends Component {
   render() {
     return (
       <div id='App' className='App'>
-        <p>This is the main application</p>
-
+        <HomeNavigation />
         <Home />
       </div>
     );
