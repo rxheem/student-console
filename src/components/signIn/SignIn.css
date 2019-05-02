@@ -1,1 +1,30 @@
 /* SignIn.css */
+
+@media only screen and (min-width: 990px) {
+  #Sign-In {
+    padding-top: 27px !important;
+  }
+
+  #Sign-In input {
+    max-height: 2rem;
+  }
+
+  #Sign-In .si-minified {
+    display: flex;
+  }
+
+  .si-minified .si-forgot-password {
+    font-size: 14px;
+    text-align: right;
+    padding-right: 100px;
+    margin-top: -13px !important;
+  }
+
+  #btnSignIn {
+    margin-left: -5px !important;
+    max-height: 38px;
+  }
+}
+
+@media only screen and (min-width: 889px) {
+}
