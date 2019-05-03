@@ -33,7 +33,7 @@ class SignIn extends Component {
   render() {
     if (this.props.isMinified) {
       return (
-        <div fluid={true} id='Sign-In' style={{ paddingTop: '15px' }}>
+        <div fluid={true} id='Sign-In' style={{ paddingTop: '15px' }} className='si-minified'>
           <Form className='ml-auto'>
             <Form.Row>
               {/* Email or username */}
@@ -78,7 +78,7 @@ class SignIn extends Component {
                   onChange={this.handleChange.bind(this)}
                 />
               </Form.Group>
-              <Button id='btnSignIn' primary disabled>Sign In</Button>
+              <Button id='btnSignIn' primary>Sign In</Button>
             </Form.Row>
 
             {/* Forgot password section */}

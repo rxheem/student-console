@@ -4,6 +4,10 @@ import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import SignIn from '../signIn/SignIn';
 
+// Views
+import DropdownNavLink from './views/dropdownNavLink/DropdownNavLink';
+import NavLink from './views/navLink/NavLink';
+
 class HomeNavigation extends Component {
   constructor(props) {
     super(props);
@@ -11,7 +15,7 @@ class HomeNavigation extends Component {
 
   render() {
     return (
-      <div className='animated slideInLeft'>
+      <div className='animated fadeIn'>
         <Navbar className='d-lg-none d-sm-none'>
           <Navbar.Brand href='/'>School Console</Navbar.Brand>
         </Navbar>
@@ -24,28 +28,17 @@ class HomeNavigation extends Component {
 
           <Navbar.Collapse id='navbar-nav'>
             <Nav className='mr-auto'>
-              <Nav.Link href='#home'>Why Console</Nav.Link>
+              <NavLink title='Home' to='/' />
               <NavDropdown title='Your Role' id='basic-nav-dropdown'>
-                <NavDropdown.Item href='#action/3.2'>
-                  Principal
-                </NavDropdown.Item>
-                <NavDropdown.Item href='#action/3.1'>
-                  Administration
-                </NavDropdown.Item>
-                <NavDropdown.Item href='#action/3.2'>
-                  Amissions
-                </NavDropdown.Item>
-                <NavDropdown.Item href='#action/3.3'>Teacher</NavDropdown.Item>
-                <NavDropdown.Item href='#action/3.3'>
-                  Inventory
-                </NavDropdown.Item>
+                <DropdownNavLink title='Administration' />
+                <DropdownNavLink title='Admissions' to='' />
+                <DropdownNavLink title='Teachers' to='' />
+                <DropdownNavLink title='Inventory' to='' />
                 <NavDropdown.Divider />
-                <NavDropdown.Item href='#action/3.4'>
-                  Other Staff
-                </NavDropdown.Item>
+                <DropdownNavLink title='Other Staff' to='' />
               </NavDropdown>
-              <Nav.Link href='#home'>Resources</Nav.Link>
-              <Nav.Link href='#link'>Contact Us</Nav.Link>
+              <NavLink title='Resources' to='' />
+              <NavLink title='Contact Us' to='' />
             </Nav>
           </Navbar.Collapse>
 
