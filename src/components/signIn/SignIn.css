@@ -21,10 +21,7 @@
   }
 
   #btnSignIn {
-    margin-left: -5px !important;
-    max-height: 38px;
+    margin-left: -7px !important;
+    max-height: 34px;
   }
-}
-
-@media only screen and (min-width: 889px) {
 }

@@ -11,7 +11,7 @@ class HomeNavigation extends Component {
 
   render() {
     return (
-      <div>
+      <div className='animated slideInLeft'>
         <Navbar className='d-lg-none d-sm-none'>
           <Navbar.Brand href='/'>School Console</Navbar.Brand>
         </Navbar>
