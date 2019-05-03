@@ -21,7 +21,7 @@ class HomeNavigation extends Component {
         </Navbar>
         <Navbar id='Home-Navigation' bg='light' variant='light' expand='lg'>
           <Navbar.Brand href='/' className='d-sm-block'>
-            School Console
+            <span>Console</span>
           </Navbar.Brand>
 
           <Navbar.Toggle aria-controls='home-navbar-nav' />
@@ -30,15 +30,15 @@ class HomeNavigation extends Component {
             <Nav className='mr-auto'>
               <NavLink title='Home' to='/' />
               <NavDropdown title='Your Role' id='basic-nav-dropdown'>
-                <DropdownNavLink title='Administration' />
-                <DropdownNavLink title='Admissions' to='' />
-                <DropdownNavLink title='Teachers' to='' />
-                <DropdownNavLink title='Inventory' to='' />
+                <DropdownNavLink title='Administration' to='/roles/administration/' />
+                <DropdownNavLink title='Admissions' to='/roles/admissions/' />
+                <DropdownNavLink title='Teachers' to='/roles/teachers/' />
+                <DropdownNavLink title='Inventory' to='/roles/inventory/' />
                 <NavDropdown.Divider />
-                <DropdownNavLink title='Other Staff' to='' />
+                <DropdownNavLink title='Other Staff' to='/roles/other-staff/' />
               </NavDropdown>
-              <NavLink title='Resources' to='' />
-              <NavLink title='Contact Us' to='' />
+              <NavLink title='Resources' to='/resources/' />
+              <NavLink title='Contact Us' to='/contact-us/' />
             </Nav>
           </Navbar.Collapse>
 
