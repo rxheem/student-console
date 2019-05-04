@@ -25,9 +25,12 @@ class HomeNavigation extends Component {
 
           <Navbar.Collapse id='navbar-nav'>
             <Nav className='mr-auto'>
-              <NavLink title='Home' to='/' hasIcon={false} icon='home'/>
+              <NavLink title='Home' to='/' hasIcon={false} icon='home' />
               <NavDropdown title='Your Role' id='basic-nav-dropdown'>
-                <DropdownNavLink title='Administration' to='/roles/administration/' />
+                <DropdownNavLink
+                  title='Administration'
+                  to='/roles/administration/'
+                />
                 <DropdownNavLink title='Admissions' to='/roles/admissions/' />
                 <DropdownNavLink title='Teachers' to='/roles/teachers/' />
                 <DropdownNavLink title='Inventory' to='/roles/inventory/' />
