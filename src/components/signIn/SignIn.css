@@ -33,14 +33,3 @@
     max-height: 38px;
   }
 }
-
-@media only screen and (max-width: 600px) {
-
-  .form, form{
-    display: block;
-  }
-
-  #btnSignIn {
-    max-height: 40px;
-  }
-}
