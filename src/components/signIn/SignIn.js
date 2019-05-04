@@ -47,9 +47,11 @@ class SignIn extends Component {
 
   render() {
     if (this.isMobile()) {
-      return(
-        <Link role='button' className='nav-link'>Sign In</Link>
-      )
+      return (
+        <Link role='button' className='nav-link'>
+          Sign In
+        </Link>
+      );
     } else {
       if (this.props.isMinified) {
         return (
