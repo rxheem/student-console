@@ -18,7 +18,7 @@ class HomeNavigation extends Component {
       <div className='animated fadeIn'>
         <Navbar id='Home-Navigation' bg='light' variant='light' expand='lg'>
           <Navbar.Brand className='d-sm-block animated slideInLeft'>
-            <span>Console</span>
+            Console
           </Navbar.Brand>
 
           <Navbar.Toggle aria-controls='home-navbar-nav' />
