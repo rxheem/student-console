@@ -16,11 +16,8 @@ class HomeNavigation extends Component {
   render() {
     return (
       <div className='animated fadeIn'>
-        <Navbar className='d-lg-none d-sm-none'>
-          <Navbar.Brand href='/'>School Console</Navbar.Brand>
-        </Navbar>
         <Navbar id='Home-Navigation' bg='light' variant='light' expand='lg'>
-          <Navbar.Brand href='/' className='d-sm-block'>
+          <Navbar.Brand className='d-sm-block animated slideInLeft'>
             <span>Console</span>
           </Navbar.Brand>
 
@@ -40,10 +37,10 @@ class HomeNavigation extends Component {
               <NavLink title='Resources' to='/resources/' />
               <NavLink title='Contact Us' to='/contact-us/' />
             </Nav>
-          </Navbar.Collapse>
 
-          {/* Minified sign in */}
-          <SignIn isMinified={true} />
+            {/* Minified sign in */}
+            <SignIn isMinified={true} />
+          </Navbar.Collapse>
         </Navbar>
       </div>
     );
