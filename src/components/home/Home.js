@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import SignIn from '../signIn/SignIn';
+import Page from '../../views/pages/Page';
 
-export default class Home extends Component {
+class Home extends Component {
   constructor(props) {
     super(props);
 
@@ -14,7 +15,12 @@ export default class Home extends Component {
     return (
       <div>
         <span />
+        <Page fluid={false}>
+
+        </Page>
       </div>
     );
   }
 }
+
+export default Home;

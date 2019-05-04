@@ -1,12 +1,12 @@
 import React from 'react';
+import Container from 'react-bootstrap/Container';
 
 const Page = props => {
   return (
-    <div id='page' className='page'>
-
+    <Container fluid={props.fluid} className='page'>
       {props.children}
-    </div>
-  )
-}
+    </Container>
+  );
+};
 
 export default Page;
