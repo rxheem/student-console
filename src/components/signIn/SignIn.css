@@ -1,6 +1,10 @@
 /* SignIn.css */
 
 @media only screen and (min-width: 990px) {
+
+  .si-minified{
+    padding-top: 15px;
+  }
   #Sign-In {
     padding-top: 27px !important;
   }
@@ -20,11 +24,23 @@
     margin-top: -13px !important;
   }
 
+  .frm-group {
+    display: flex;
+  }
+
   #btnSignIn {
     margin-left: -5px !important;
     max-height: 38px;
   }
 }
 
-@media only screen and (min-width: 889px) {
+@media only screen and (max-width: 600px) {
+
+  .form, form{
+    display: block;
+  }
+
+  #btnSignIn {
+    max-height: 40px;
+  }
 }

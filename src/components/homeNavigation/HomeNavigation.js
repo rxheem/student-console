@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+
+// Components
 import SignIn from '../signIn/SignIn';
 
 // Views
