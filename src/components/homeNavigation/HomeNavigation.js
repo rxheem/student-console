@@ -4,7 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
 // Components
-import SignIn from '../signIn/SignIn';
+import MinifiedSignIn from '../minifiedSignIn/MinifiedSignIn';
 
 // Views
 import DropdownNavLink from './views/dropdownNavLink/DropdownNavLink';
@@ -44,7 +44,7 @@ class HomeNavigation extends Component {
             </Nav>
 
             {/* Minified sign in */}
-            <SignIn isMinified={true} />
+            <MinifiedSignIn />
           </Navbar.Collapse>
         </Navbar>
       </div>

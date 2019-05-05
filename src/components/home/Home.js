@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import SignIn from '../signIn/SignIn';
 import Page from '../../views/pages/essentials/Page';
 
 class Home extends Component {
