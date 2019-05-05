@@ -95,6 +95,7 @@ class MinifiedSignIn extends Component {
                   onChange={this.handleChange.bind(this)}
                 />
               </Form.Group>
+
               <Button id='btnSignIn' primary>
                 Sign In
               </Button>

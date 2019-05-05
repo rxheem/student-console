@@ -12,7 +12,7 @@
     max-height: 2rem;
   }
 
-  #Sign-In .si-minified {
+  .si-minified {
     display: flex;
   }
 
@@ -28,7 +28,8 @@
   }
 
   #btnSignIn {
-    margin-left: -5px !important;
-    max-height: 38px;
+    padding-left: 10px !important;
+    margin-left: 10px;
+    max-height: 36px;
   }
 }
