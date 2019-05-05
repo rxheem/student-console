@@ -28,9 +28,11 @@ class SignIn extends Component {
 
   render() {
     return (
-      <Container>
+      <Container fluid={true}>
         <div id='Sign-In' className='sign-in'>
           <Form className='animated fadeIn'>
+            {/* Header */}
+            <h1>Sign in to get started</h1>
             {/* Email */}
             <Form.Group controlId='email'>
               <Form.Label>Email address</Form.Label>
@@ -74,7 +76,6 @@ class SignIn extends Component {
               </PopUpOverlay>
             </Form.Group>
             <Button>Sign In</Button>
-            <br /> <br />
           </Form>
         </div>
       </Container>
