@@ -46,8 +46,7 @@ class MinifiedSignIn extends Component {
     this.setState({ [event.target.id]: event.target.value });
   }
 
-  componentDidMount() {
-  }
+  componentDidMount() {}
 
   render() {
     if (this.isMobile()) {

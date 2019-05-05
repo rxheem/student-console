@@ -16,9 +16,8 @@ class HomeNavigation extends Component {
     super(props);
   }
 
-  componentDidMount(){
-    ScrollReveal().reveal('.nav-link', { delay: 850 })
-
+  componentDidMount() {
+    ScrollReveal().reveal('.nav-link', { delay: 850 });
   }
 
   render() {

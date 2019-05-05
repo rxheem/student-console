@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 
 class PageNavigation extends Component {
   render() {
-    return(
+    return (
       <div>
         <p>This is a page navigation</p>
       </div>
-    )
+    );
   }
 }
 
