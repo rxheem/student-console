@@ -5,6 +5,13 @@ import Switch from 'react-router-dom/Switch';
 import Route from 'react-router-dom/Route';
 import Home from './components/home/Home';
 
+// Navigations
+import About from './views/pages/content/About';
+import Contact from './views/pages/content/Contact';
+import TermsOfUse from './views/pages/content/TermsOfUse';
+import PrivacyPolicy from './views/pages/content/PrivacyPolicy';
+import Join from './views/pages/content/Join';
+
 // Components
 import HomeNavigation from './components/homeNavigation/HomeNavigation';
 import SignIn from './components/signIn/SignIn';
@@ -31,6 +38,13 @@ class App extends Component {
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/sign-in/' component={SignIn} />
+
+          {/* Page */}
+                    <Route exact path='/join/' component={Join} />
+          <Route exact path='/about/' component={About} />
+          <Route exact path='/contact/' component={Contact} />
+          <Route exact path='/terms-of-use/' component={TermsOfUse} />
+          <Route exact path='/privacy-policy/' component={PrivacyPolicy} />
         </Switch>
 
         {/* Main Home Navigation */}

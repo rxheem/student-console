@@ -3,6 +3,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
+import './HomeNavigation.css'
+
 // Components
 import MinifiedSignIn from '../minifiedSignIn/MinifiedSignIn';
 
@@ -45,7 +47,7 @@ class HomeNavigation extends Component {
                 <DropdownNavLink title='Other Staff' to='/roles/other-staff/' />
               </NavDropdown>
               <NavLink title='Resources' to='/resources/' />
-              <NavLink title='Contact Us' to='/contact-us/' />
+              <NavLink title='Contact Us' to='/contact/' />
             </Nav>
 
             {/* Minified sign in */}

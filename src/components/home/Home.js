@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Page from '../../views/pages/essentials/Page';
 
 class Home extends Component {
   constructor(props) {
@@ -14,9 +13,7 @@ class Home extends Component {
     return (
       <div>
         <span />
-        <Page fluid={false}>
-          <p>This is the home Component.</p>
-        </Page>
+
       </div>
     );
   }
