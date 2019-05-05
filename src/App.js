@@ -5,8 +5,9 @@ import Switch from 'react-router-dom/Switch';
 import Route from 'react-router-dom/Route';
 import Home from './components/home/Home';
 
-// Navigation
+// Components
 import HomeNavigation from './components/homeNavigation/HomeNavigation';
+import SignIn from './components/signIn/SignIn';
 
 // Views
 import Footer from './views/footer/Footer';
@@ -29,6 +30,7 @@ class App extends Component {
 
         <Switch>
           <Route exact path='/' component={Home} />
+          <Route exact path='/sign-in/' component={SignIn} />
         </Switch>
 
         {/* Main Home Navigation */}

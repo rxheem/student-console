@@ -59,7 +59,7 @@ class MinifiedSignIn extends Component {
       );
     } else {
       return (
-        <div fluid={true} id='Sign-In' className='si-minified'>
+        <div fluid={true} id='Minified-Sign-In' className='si-minified'>
           <Form>
             <Form.Row>
               {/* Email or username */}

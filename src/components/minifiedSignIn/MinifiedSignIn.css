@@ -4,11 +4,11 @@
   .si-minified {
     padding-top: 15px;
   }
-  #Sign-In {
+  #Minified-Sign-In {
     padding-top: 27px !important;
   }
 
-  #Sign-In input {
+  #Minified-Sign-In input {
     max-height: 2rem;
   }
 
