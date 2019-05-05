@@ -1,9 +1,3 @@
-/* # # # # # # # # # # # # # # # # #
- *   I have to confess I should be able to make this compoennt do the checking more efficeinty.
- *   I think I may just make serveral different components as trying to put everything into one
- *   is making it more difficult for me.
- */
-
 import React, { Component } from 'react';
 
 // All bootstrap components
@@ -38,9 +32,11 @@ class MinifiedSignIn extends Component {
         navigator.userAgent
       )
     ) {
+      // Returns true if a match is found
       return true;
     }
 
+    // Returns false if npt mobile.
     return false;
   };
 
@@ -54,6 +50,8 @@ class MinifiedSignIn extends Component {
   render() {
     if (this.isMobile()) {
       return (
+        // Its tricky rearranging the styling for the minified sign in without making the component bloated
+        // so a link to the sign in page will be displayed instead.
         <Link role='button' className='nav-link' to='/sign-in/'>
           Sign In
         </Link>
