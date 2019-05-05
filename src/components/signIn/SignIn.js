@@ -3,10 +3,29 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
+import Link from 'react-router-dom/Link';
+import PopUpOverlay from '../../common/PopUpOverlay';
 
 import './SignIn.css';
 
 class SignIn extends Component {
+  constructor(props) {
+    super(props);
+
+    // Sets the state
+    this.state = {
+      email: '',
+      password: '',
+      keepSignedIn: false
+    };
+  }
+
+  // Handles the event changes for the email and password
+  handleChange(event) {
+    this.setState({ [event.target.id]: event.target.value });
+  }
+
   render() {
     return (
       <Container>
@@ -15,7 +34,13 @@ class SignIn extends Component {
             {/* Email */}
             <Form.Group controlId='email'>
               <Form.Label>Email address</Form.Label>
-              <Form.Control type='email' placeholder='Enter email' />
+              <Form.Control
+                name='email'
+                type='email'
+                placeholder='Enter email'
+                value={this.state.email}
+                onChange={this.handleChange.bind(this)}
+              />
 
               {/* Form text disclaimer for the user */}
               <Form.Text className='text-muted'>
@@ -24,12 +49,32 @@ class SignIn extends Component {
                 spam.
               </Form.Text>
             </Form.Group>
-
             {/* Password */}
             <Form.Group controlId='password'>
               <Form.Label>Password</Form.Label>
-              <Form.Control type='password' placeholder='Enter password' />
+              <Form.Control
+                name='password'
+                type='password'
+                placeholder='Enter secure password'
+                value={this.state.password}
+                onChange={this.handleChange.bind(this)}
+              />
             </Form.Group>
+            {/* Forgot password */}
+            <div className='forgot-password'>
+              <Link>Forgot password</Link>
+            </div>
+            <Form.Group controlId=''>
+              <PopUpOverlay
+                key='left'
+                placement='left'
+                tooltip='Do not check this box if you are using a shared device.'
+              >
+                <Form.Check type='checkbox' label='Keep me signed in' />
+              </PopUpOverlay>
+            </Form.Group>
+            <Button>Sign In</Button>
+            <br /> <br />
           </Form>
         </div>
       </Container>

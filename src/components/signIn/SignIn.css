@@ -5,4 +5,9 @@
     margin: auto;
     max-width: 500px;
   }
+
+  #Sign-In .forgot-password {
+    text-align: right;
+    margin-top: -10px;
+  }
 }
