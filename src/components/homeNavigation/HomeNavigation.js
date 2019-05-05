@@ -9,15 +9,21 @@ import MinifiedSignIn from '../minifiedSignIn/MinifiedSignIn';
 // Views
 import DropdownNavLink from './views/dropdownNavLink/DropdownNavLink';
 import NavLink from './views/navLink/NavLink';
+import ScrollReveal from 'scrollreveal';
 
 class HomeNavigation extends Component {
   constructor(props) {
     super(props);
   }
 
+  componentDidMount(){
+    ScrollReveal().reveal('.nav-link', { delay: 850 })
+
+  }
+
   render() {
     return (
-      <div className='animated fadeIn'>
+      <div className='main-nav' className='animated fadeIn'>
         <Navbar id='Home-Navigation' bg='light' variant='light' expand='lg'>
           <Navbar.Brand className='d-sm-block animated slideInLeft'>
             Console

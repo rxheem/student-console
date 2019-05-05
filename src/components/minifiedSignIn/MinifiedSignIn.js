@@ -10,6 +10,7 @@ import Link from 'react-router-dom/Link';
 
 // jQuery
 import $ from 'jquery';
+import ScrollReveal from 'scrollreveal';
 
 // Importing Style
 import './MinifiedSignIn.css';
@@ -45,7 +46,8 @@ class MinifiedSignIn extends Component {
     this.setState({ [event.target.id]: event.target.value });
   }
 
-  componentDidMount() {}
+  componentDidMount() {
+  }
 
   render() {
     if (this.isMobile()) {
