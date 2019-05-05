@@ -1,0 +1,29 @@
+/* Page CSS */
+
+.page {
+  margin: 15px;
+  background-color: #fff;
+}
+
+#pp-sidebar {
+  background-color: #fdfdfd;
+}
+
+.scrollable {
+  overflow-y: auto !important;
+}
+
+#pp-sidebar .nav-link:hover {
+  color: black;
+  transition: 2s;
+}
+
+@media (max-width: 750px) {
+  .hide-on-small {
+    display: none;
+  }
+
+  .center-on-small {
+    text-align: center !important;
+  }
+}

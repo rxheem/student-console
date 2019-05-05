@@ -1,5 +1,6 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
+import './Page.css';
 
 const Page = props => {
   return (
