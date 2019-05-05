@@ -1,3 +1,9 @@
+/* # # # # # # # # # # # # # # # # #
+*   I have to confess I should be able to make this compoennt do the checking more efficeinty.
+*   I think I may just make serveral different components as trying to put everything into one
+*   is making it more difficult for me. 
+*/
+
 import React, { Component } from 'react';
 
 // All bootstrap components
