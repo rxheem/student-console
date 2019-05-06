@@ -104,7 +104,7 @@ class MinifiedSignIn extends Component {
 
             {/* Forgot password section */}
             <div className='si-forgot-password'>
-              <Link className='nav-item'>Forgot Password</Link>
+              <Link className='nav-item' to='/forgot-password/'>Forgot Password</Link>
             </div>
           </Form>
         </div>

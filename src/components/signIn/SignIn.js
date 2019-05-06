@@ -64,7 +64,7 @@ class SignIn extends Component {
             </Form.Group>
             {/* Forgot password */}
             <div className='forgot-password'>
-              <Link>Forgot password</Link>
+              <Link to='/forgot-password/'>Forgot password</Link>
             </div>
             <Form.Group controlId=''>
               <PopUpOverlay
